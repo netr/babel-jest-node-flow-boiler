@@ -1,0 +1,53 @@
+{
+  "name": "babel-jest-node-flow-boiler",
+  "version": "",
+  "description": "",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/netr/babel-jest-node-flow-boiler",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest --runInBand --verbose",
+    "coverage": "jest --coverage --runInBand --verbose",
+    "eslint": "eslint *.js --ignore-pattern \"node_modules/\"",
+    "prettier": "prettier --write \"*.js\"",
+    "flow": "flow"
+  },
+  "keywords": [],
+  "author": "netr",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-node": "^10.0.0",
+    "flow-bin": "^0.109.0",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "prettier": "1.18.2",
+    "web3-utils": "^1.2.1"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=8"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "node",
+      "jest"
+    ],
+    "env": {
+      "jest/globals": true,
+      "node": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2018
+    }
+  }
+}
